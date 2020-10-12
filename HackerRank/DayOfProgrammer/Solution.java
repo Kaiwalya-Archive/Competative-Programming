@@ -10,7 +10,7 @@ public class Solution {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int y = in.nextInt();
-
+        in.close();
         if(y>=1700 && y<=1917){
 
             if(y%4==0){
