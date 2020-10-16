@@ -1,4 +1,4 @@
-package Final500Sheet.KthMaxAndMinOfArray;
+package Final500Sheet.Arrays.KthMaxAndMinOfArray;
 import java.util.*;
 public class Solution {
     public static void main(String[] args) {

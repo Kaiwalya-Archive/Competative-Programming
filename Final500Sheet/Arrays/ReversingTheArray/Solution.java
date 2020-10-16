@@ -1,4 +1,4 @@
-package Final500Sheet.ReversingTheArray;
+package Final500Sheet.Arrays.ReversingTheArray;
 import java.util.*;
 public class Solution {
     public static void main(String[] args) {
