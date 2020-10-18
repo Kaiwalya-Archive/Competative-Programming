@@ -22,6 +22,9 @@ public class Solution {
                     max = sum;
                 }
             }
+            else{
+                sum=0;
+            }
         }
 
         System.out.println(max);
