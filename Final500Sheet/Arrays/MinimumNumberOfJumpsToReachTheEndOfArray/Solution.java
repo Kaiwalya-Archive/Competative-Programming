@@ -14,6 +14,9 @@ public class Solution {
 
         //Main Logic
 
+        for (int i = 0; i < array.length; i++) {
+            
+        }
 
     }
 }
