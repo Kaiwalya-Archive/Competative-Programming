@@ -12,11 +12,12 @@ public class Solution {
 
         //Traversing array in reverse order and finding index1;
         int index1=0;
-        for (int i = array.length-1; i >= 0; i--) {
+        for (int i = array.length-2; i >= 0; i--) {
             if(array[i]<array[i+1]){
                 index1=i;
                 break;
             }
+
         }
 
         //Traversing array in reverse order and finding index2
@@ -24,6 +25,7 @@ public class Solution {
         for (int i = array.length-1; i >= 0; i--) {
             if(array[i]>array[index1]){
                 index2=i;
+                break;
             }
         }
 
@@ -35,17 +37,28 @@ public class Solution {
 
         //Printing the next permutation
         for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i]);
+            System.out.print(array[i]+" ");
         }
     }
 
     //Function to swap the indexes in the array
     public static void swap(int[] array, int ind1, int ind2){
-
+        int temp = array[ind1];
+        array[ind1] = array[ind2];
+        array[ind2] = temp;
     }
 
     //Reversing the specific portion of the array
     public static void reverse(int[] array, int ind1){
-
+        int j = array.length-1;
+        for (int i = ind1+1; i < array.length; i++) {
+            if(i>=j){
+                break;
+            }
+            swap(array,i,j);
+            j--;
+        }
     }
 }
+
+//Test Case: 5 1 3 5 4 2
