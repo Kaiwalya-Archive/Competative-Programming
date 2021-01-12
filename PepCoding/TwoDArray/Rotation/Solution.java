@@ -13,11 +13,11 @@ public class Solution {
             }
         }
 
-        rotateby90(arr);
+        rotateBy90(arr);
         display(arr);
     }
 
-    public static void rotateby90(int[][] arr){
+    public static void rotateBy90(int[][] arr){
         // transpose
         for(int i = 0; i < arr.length; i++){
             for(int j = 0; j < i; j++){
